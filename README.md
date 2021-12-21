@@ -142,6 +142,8 @@ python seq2seq_pred.py \
 ['some how is being how how by them how ; last 1 how some how by how how how at last last 1 how how being been how how by them at last being how how ; might some how by them how how ; last been how their some how how how at last being how how by them how ; last been how their some how how how at last being how how by them how ; last been how their some how how how at last being how how by them how ; last been how their some how how how at last being how how by them how ; last been how their some how how how at last being how how by them how ; last been how their some how how how at last being how how by them how ; last been how']
 ```
 
+Ничего не обучилось :(
+
 ## GECToR Quickstart
 
 ### 1. Обучение
@@ -156,3 +158,11 @@ python train.py --train_set ../data/gector_lang8_russian/train.gec --dev_set ../
 ```
 python predict.py --model_path ./models/rubert-tiny2/best.th --vocab_path ./models/rubert-tiny2/vocabulary --input_file ../test_rus.src  --output_file pred.txt --transformer_model cointegrated/rubert-tiny2
 ```
+
+Что получилось:
+```
+Input: She see Tom is catched by policeman in park at last night.
+Pred:  She said Tom was catched by policeman in the park last night.
+```
+
+Изменил смысл предложения, но лучше, учитывая сколько и на каком датасете это обучали.
