@@ -1,0 +1,10 @@
+python transformer/transformer_train.py \
+  -exp_name glove_bigger \
+  -src data/synthetic_10k/ \
+  -model transformer/experiments/ \
+  -corpus synthetic \
+  -epochs 1000 \
+  -batch_size 2300 \
+  -en glove \
+  -de glove \
+#  -resume_checkpoint transformer/experiments/glove_bigger/loss_4.770610995914625_step_1560.transformer.pt
