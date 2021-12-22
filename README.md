@@ -115,6 +115,11 @@ Translation: She <unk> is <unk> is a <unk> <unk> in at Mr. Gross 's month .
 
 Аналогичная ситуация
 
+### 3. Эксперименты
+1. Эмбеддинги elmo
+2. Эмбеддинги glove
+3. Эмбеддинги glove, с увеличеным количеством слоёв с 6 до 8 и увеличеным dropout с 0.1 до 0.3, а так же в 10 раз больший датасет
+
 
 ## Seq2seq Quickstart
 
@@ -150,6 +155,15 @@ python seq2seq_pred.py \
 
 Ничего не обучилось :(
 
+### 3. Эксперименты
+1. Эмбеддинги elmo
+2. Эмбеддинги elmo и всего один LSTM-слой
+3. Эмбеддинги elmo и fix_embeddings=False
+4. Эмбеддинги elmo и hidsize=1024
+5. Эмбеддинги elmo и в 10 раз больший датасет
+6. Эмбеддинги glove и в 10 раз больший датасет
+
+
 ## GECToR Quickstart
 
 ### 1. Обучение
@@ -172,3 +186,9 @@ Pred:  She said Tom was catched by policeman in the park last night.
 ```
 
 Изменил смысл предложения, но лучше, учитывая сколько и на каком датасете это обучали.
+
+### 3. Эксперименты
+1. Предтренированный ruRoberta-large с датасетом cLang8 Russian
+2. Предтренированный rubert-tiny2 с датасетом cLang8 Russian
+3. Предтренированный roberta-base на синтетическом датасете размером 10k
+
