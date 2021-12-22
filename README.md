@@ -1,6 +1,12 @@
 # Grammatical Error Correction - Home Assignment
 Home assignment to conduct multiple experiments for Grammatical Error Correction task
 
+Reference:
+
+https://github.com/michaelchen110/Grammar-Correction/
+
+https://github.com/grammarly/gector
+
 ## Overview
 Были рассмотрены три различные нейросетевые архитектуры применительно к задаче исправления грамматических ошибок:
 1. Sequence to sequence
